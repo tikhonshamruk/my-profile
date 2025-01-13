@@ -1,0 +1,44 @@
+.navigation-wrapper{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 345px 1fr;
+    left: -100%;
+    width: 100%;
+    transition: 0.8s;
+    height: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-wrapper__left{
+    padding: 24px 24px 50px 40px;
+    display: flex;
+    height: 100%;
+    background-color: #FFA501;
+}
+
+.navigation-wrapper__right{
+    height: 100%;
+    background-color: white;
+    opacity: 0.75;
+  
+}
+
+.header__inner--center.active{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.navigation__burger-menu{
+
+}
+
+.navigation-wrapper__link{
+
+}
+
+.navigation-wrapper.active {
+    left: 0;
+  }

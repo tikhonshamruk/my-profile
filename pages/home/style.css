@@ -1,0 +1,271 @@
+@font-face{
+    font-family: "Poppins700";
+    src: url("../../assets/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "Poppins500";
+    src: url("../../assets/fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+
+/*--------------general--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.btn{
+    padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Убираем подчеркивание у текста */
+            text-align: center;
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+
+.btn:active{
+    background-color: #004080;
+}
+/*--------------typography---------*/
+
+h1,
+h2,
+h3,
+.action-large{
+    font-family: "Poppins700";
+    text-decoration: uppercase;
+}
+
+.metka::before{
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFA501;
+    z-index: -1;
+    top: 50%; /* Смещаем круг по вертикали */
+    left: 5px;
+    transform: translate(-50%, -50%); /* Центрируем круг */
+}
+
+.metka{
+    position: relative;
+    z-index: 5;
+}
+
+h1{
+    font-size: 16px;
+    line-height: 24px;
+    margin:0;
+    margin: 0;
+
+}
+
+h2{
+    font-size: 36px;
+    line-height: 60px;
+}
+
+h3{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.paragraph{
+    font-family: "Poppins500";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.action-large{
+    font-size: 48px;
+}
+
+.mg6{
+    margin-top: 6px;
+}
+
+.mg25{
+    margin-top: 25px;
+}
+
+.mg65{
+    margin-top: 65px;
+}
+
+.mg60{
+    margin-top: 60px;
+}
+
+.ml{
+    margin-left: 10px;
+}
+
+.line {
+    margin-top: 1px;
+    border: 3px solid orange;
+    width: 60px;
+}
+
+/*--------------header------------*/
+
+header{
+    background-image: url(../../assets/img/Background.jpg);
+    height: 800px; /* Используем min-height вместо height */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -110px;
+}
+
+.header-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.header__inner--left{
+    flex: 1;
+}
+
+.header__inner--center{
+    width: 1140px;
+}
+
+.header__inner--right{
+    flex: 1;
+}
+
+.header__inner__rotate {
+    padding-left: 50px;
+    padding-top: 226px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+
+.header__title {
+    margin-bottom: 0px;
+}
+.header__divider {
+    border-left: 2px solid #000000;
+    height: 70px;
+  left: 50%;
+  /* margin-left: -3px; */
+}
+.social-network{
+    display: flex;
+    gap:15px
+}
+
+.social-network__icon {
+
+}
+
+
+.header__inner--center{
+    padding-top: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.header__inner--center h1{
+    margin-bottom: 9px;
+}
+
+.header__inner--center h2{
+    margin-bottom: 25px;
+}
+
+.header__inner--right{
+
+}
+
+.burger-menu {
+   margin-right: 30px;
+   margin-top: 20px;
+}
+
+.burger-menu__icon {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.burger-menu__line {
+    border-top: 3px solid #000000;
+    width: 30px;
+}
+
+.burger-menu__medium-line{
+    width: 36px;
+}
+
+.burger-menu__line:hover {
+
+}
+
+@media (max-width: 1400px) {
+    header{
+        background-position-y:  0px;
+    }
+
+    .header__inner__rotate{
+        padding-right: 32px;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header{
+        height: 640px;
+        background-position-y: 0px;
+    }
+}
+
+
+
+/*----------body-wrapper---------*/
+.body-wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
