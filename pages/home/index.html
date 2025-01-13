@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style320.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="../modal.css">
+    <link rel="stylesheet" href="benefit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -49,25 +51,31 @@
                     <div class="navigation-wrapper">
                         <div class="navigation-wrapper__left">
                             <div class="navigation__burger-menu">
-    
+                                <img src="../../assets/icons/Close.svg" alt="">
                             </div>
                             <nav class="navigation-wrapper__link">
                                 <li>
+                                    <div class="menu-list__item-circle"></div>
                                     <a href="" class="navigation-link">ПРО МЕНЯ</a>
                                 </li>
                                 <li>
+                                    <div class="menu-list__item-circle"></div>
                                     <a href="" class="navigation-link">МОЙ ОПЫТ</a>
                                 </li>
                                 <li>
+                                    <div class="menu-list__item-circle"></div>
                                     <a href="" class="navigation-link">МОИ НАВЫКИ</a>
                                 </li>
                                 <li>
+                                    <div class="menu-list__item-circle"></div>
                                     <a href="" class="navigation-link">МОИ РАБОТЫ</a>
                                 </li>
                                 <li>
+                                    <div class="menu-list__item-circle"></div>
                                     <a href="" class="navigation-link">ПРАЙС-ЛИСТ</a>
                                 </li>
                                 <li>
+                                    <d  iv class="menu-list__item-circle"></d>
                                     <a href="" class="navigation-link">КОНТАКТЫ</a>
                                 </li>
                             </nav>
@@ -82,6 +90,59 @@
         </div>
     </header>
     <div class="body-wrapper">
+        <section class="section-benefit">
+            <h1 class="metk">Опыт</h1>
+            <h2>Чем я буду полезна</h2>
+            <div class="footer-divide"></div>
+            <div class="timeline">
+                <div class="timeline__section">
+                      <h2 class="timeline__title">Образование</h2>
+                      <div class="timeline__item">
+                          <div class="timeline__circle"></div>
+                          <div class="timeline__content">
+                                <h3 class="timeline__content-title">МГТУ им. Н.Э. Баумана</h3>
+                              <p class="timeline__content-info">Диплом магистра | Москва (2014-2020)</p>
+                              <p class="timeline__content-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                              </p>
+                          </div>
+                      </div>
+                       <div class="timeline__item">
+                          <div class="timeline__circle"></div>
+                          <div class="timeline__content">
+                              <h3 class="timeline__content-title">Udemy</h3>
+                              <p class="timeline__content-info">Курсы по Web-разработке</p>
+                                <p class="timeline__content-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                   <div class="timeline__section">
+                      <h2 class="timeline__title">Опыт работы</h2>
+                      <div class="timeline__item">
+                          <div class="timeline__circle"></div>
+                          <div class="timeline__content">
+                              <h3 class="timeline__content-title">Front-End Developer</h3>
+                              <p class="timeline__content-info">EPAM | Москва (2018-2019)</p>
+                                <p class="timeline__content-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="timeline__item">
+                          <div class="timeline__circle"></div>
+                           <div class="timeline__content">
+                               <h3 class="timeline__content-title">UI/UX Designer</h3>
+                             <p class="timeline__content-info">Squad Team | Москва (2018)</p>
+                              <p class="timeline__content-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                              </p>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+        </section>
         <footer class="footer">
             <div class="footer-image">
                 <img src="../../assets/img/Photo.jpg" alt="">
@@ -100,21 +161,21 @@
                 
                 <form id="contact-form">
                     <div class="form-group">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="form-label">Ваше имя:</label>
+                        <input type="text" class="form-input form-group__name" id="name" name="name" placeholder="Иван" required>
                         <span class="error-message" id="name-error"></span>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Ваш email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-group form-group__name">
+                        <label for="email" class="form-label">Ваш email:</label>
+                        <input type="email" class="form-input form-group__name" id="email" name="email" placeholder="" required>
                         <span class="error-message" id="email-error"></span>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Ваше сообщение:</label>
-                        <textarea id="message" name="message" required></textarea>
+                    <div class="form-group ">
+                        <label for="message" class="form-label">Ваше сообщение:</label>
+                        <textarea id="message" class="form-input form-gr form-input__textarea" name="message" required></textarea>
                         <span class="error-message" id="message-error"></span>
                     </div>
-                    <button class="btn" type="submit">Отправить сообщение</button>
+                    <button class="btn form-btn" type="submit">Отправить сообщение</button>
                 </form>
             </div>
         </footer>

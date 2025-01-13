@@ -1,16 +1,22 @@
 const burger = document.querySelector('.burger-menu')
 const navigationWrapper = document.querySelector('.navigation-wrapper')
 const inner_center = document.querySelector('.header__inner--center')
+const nav_menu = document.querySelector('.navigation__burger-menu')
 
 const toggleMenu = () => {
     navigationWrapper.classList.toggle('active')
     inner_center.classList.toggle('active')
 };
 
+
 burger.addEventListener('click', e => {
     
     toggleMenu();
 });
+
+nav_menu.addEventListener('click', e => {
+    toggleMenu();
+})
 
 
 document.getElementById('contact-form').addEventListener('submit', function (e) {

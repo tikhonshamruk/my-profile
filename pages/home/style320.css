@@ -16,6 +16,7 @@
     display: flex;
     height: 100%;
     background-color: #FFA501;
+    flex-direction: column;
 }
 
 .navigation-wrapper__right{
@@ -32,13 +33,111 @@
 }
 
 .navigation__burger-menu{
-
+    align-self: flex-end;
+    width: 29px;
+    height: 29px;
+    margin-bottom: 87px;
 }
 
 .navigation-wrapper__link{
-
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color:#FFA501;
 }
+
+.navigation-link{
+    color: white;
+}
+
+.menu-list__item-circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.navigation-wrapper__link li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navigation-wrapper.active {
     left: 0;
   }
+
+
+
+  
+  
+  .contact-form{
+    display: grid;
+    gap: 20px;
+  }
+
+  .form-group {
+    position: relative; /* Контекст для псевдоэлемента */
+    display: inline-block; /* чтобы обертка была по размеру контента */
+  }
+  
+  .form-label {
+    position: absolute;
+    top: -12px; /* Выравниваем метку сверху */
+    left: 8px; /* Смещение от левого края */
+    font-size: 0.8em; /* Меньший размер шрифта для метки */
+    background-color: white;
+    padding: 0 5px;
+  }
+
+  .form-group__name{
+    width: 280px;
+    height: 45px;
+  }
+
+  .form-input__textarea{
+    width: 585px;
+    height: 190px;
+  }
+  .form-input{
+
+      border: 1px solid #000;
+       padding: 10px;
+       outline: none; /* убираем обводку по дефолту */
+       box-sizing: border-box;
+  }
+  
+  .form-input:focus {
+      border-color: #f2b90c; /* меняем цвет границы при фокусе */
+  }
+  .form-input::placeholder{
+   color: #aaa;
+  }
+  
+  .form-group::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+      border-left: 1px solid #000;
+  }
+  

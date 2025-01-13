@@ -33,12 +33,13 @@ body{
     padding: 10px 20px;
             font-size: 16px;
             color: white;
-            background-color: #007BFF;
+            background-color:#FFA501;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none; /* Убираем подчеркивание у текста */
             text-align: center;
+            color: black;
 }
 
 .btn:hover{
@@ -72,6 +73,24 @@ h3,
 }
 
 .metka{
+    position: relative;
+    z-index: 5;
+}
+
+.metk::before{
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFA501;
+    z-index: -1;
+    top: 50%; /* Смещаем круг по вертикали */
+    left: 20px;
+    transform: translate(-50%, -50%); /* Центрируем круг */
+}
+
+.metk{
     position: relative;
     z-index: 5;
 }
